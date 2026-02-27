@@ -280,17 +280,22 @@ const AleeshaGame = () => {
       )}
 
       {/* Basket */}
-      <div
-        className="absolute text-5xl pointer-events-none"
-        style={{
-          left: `${basketX}%`,
-          top: "88%",
-          transform: "translate(-50%, -50%)",
-          filter: "drop-shadow(0 0 12px hsl(340 85% 60% / 0.6))",
-        }}
-      >
-        🧺
-      </div>
+    {/* Basket / Player */}
+<div
+  className="absolute pointer-events-none"
+  style={{
+    left: `${basketX}%`,
+    top: "88%",
+    transform: "translate(-50%, -50%)",
+    filter: "drop-shadow(0 0 12px rgba(255, 77, 141, 0.6))",
+  }}
+>
+  <img 
+    src="/basket1.png" 
+    alt="player" 
+    className="w-16 h-16 rounded-full  object-cover"
+  />
+</div>
     </div>
   );
 };
